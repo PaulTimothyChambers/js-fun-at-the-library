@@ -102,4 +102,4 @@ var dictionary = {
 // notation to do this. DO NOT modify your code from above.
 dictionary.pageCount = 720;
 
-console.log(dictionary);
+// console.log(dictionary);
