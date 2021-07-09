@@ -1,4 +1,5 @@
 function saveReview(review, reviews) {
+// refactor this to use .include method for arrays
   for (var i = 0; i <= reviews.length; i++) {
     if (review !== reviews[i]) {
       reviews.push(review)
@@ -24,11 +25,8 @@ function createTitle(title) {
 };
 
 function calculatePageCount(title) {
-  var currentPageCount = 0;
-  for (let x in title) {
-    currentPageCount += 20;
-  }
-  return currentPageCount;
+  var pageCount = title.length * 20;
+  return pageCount;
 };
 
 function writeBook(title, character, genre) {
