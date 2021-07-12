@@ -1,12 +1,9 @@
 function saveReview(review, reviews) {
-// refactor this to use .include method for arrays
-  for (var i = 0; i <= reviews.length; i++) {
-    if (review !== reviews[i]) {
-      reviews.push(review)
-      return reviews
-    } else {
-      return reviews
-    }
+  if (reviews.includes(review)) {
+    return reviews
+  } else {
+    reviews.push(review)
+    return reviews
   }
 };
 
